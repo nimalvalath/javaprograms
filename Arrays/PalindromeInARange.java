@@ -7,9 +7,11 @@ class PalindromeInARange{
 		int[] arrayPalindrome;	
 		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter the maximum range");
-		int range=sc.nextInt();
+		int rangeMax=sc.nextInt();
+		System.out.println("Enter the minimum range");
+		int rangeMin=sc.nextInt();
 		
-		arrayPalindrome= numberGeneration(0,range);
+		arrayPalindrome= numberGeneration(rangeMin,rangeMax);
 		
 		displayArray(arrayPalindrome);		
 	}
