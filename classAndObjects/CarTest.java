@@ -22,6 +22,7 @@ class CarTest{
 		audi.height= 100;
 		audi.weight= 200;
 		audi.color= "Blue";
+		
 
 		System.out.println(audi.height);
 		System.out.println(audi.weight);

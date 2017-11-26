@@ -35,6 +35,8 @@ public class Queue {
             throw new NoSuchElementException("underflow ");
         return queue[front];
     }
+
+
     public void insert(int i){
         if(rear== -1){
             rear= 0;

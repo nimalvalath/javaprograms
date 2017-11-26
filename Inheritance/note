@@ -1,0 +1,34 @@
+Inheritance
+-----------
+There are two ways we can achieve inheritance in Java.+
+	Implementing an Interface
+	Extending a class
+Interfaces in Java :
+-------------------
+
+What is an Interface 
+---------------------
+In Java an interface is a reference type just like a class but unlike class an interface 
+can only contain methods without body i.e abstract methods. 
+ To create the interface we use keyword interface just like we use  keyword class to create a class.
+
+The purpose of creating an interface is to inherit in one or other class. 
+We can inherit an interface in a class using the keyword --implements--. 
+If a concrete class ( a class which is not abstract) implements an interface then it has to provide implementation for all the abstract methods that are declared in an interface or else we will get a compile time error.
+
+Important points about interface :
+----------------------------------
+All of the methods in an interface are abstract, so its optional to use the keyword abstract in front of method declaration.
+An interface can not have concrete methods but it can have default implementation ( JDK 1.8 feature, Explained in interview questions video ).
+All the members inside an interface get public access modifier , hence it is optional to specify the keyword public. Members inside and interface can not be private or protected.
+An interface cannot contain instance fields. The only fields that can appear inside an interface must be declared as both static and final. Variable created inside an interface will automatically converted to final static fields internally.
+An interface does not contain any constructor.
+An interface can not be instantiated but we can create an object of type interface ( Explained in IS-A Relationship lesson ).
+An interface can extend another interface just the way a class can extend another class. But a class implements an interface.
+An interface can extend multiple interfaces.
+A class can implement multiple interface but in Java one class can extend only one class.
+If a abstract class implements an interface then it is not necessary to implement the interface methods but the class which extends the abstract class has to provide the implementation for the abstract methods present the that abstract class as well as interface methods if the inheriting class is concrete.
+Just like we add a class to an package we can also add an interface to a particular package.
+Bytecode (.class file) gets generated for an interface also.
+JDK 1.7 and before that static methods were not allowed in an interface.
+Java 8 introduced static interface methods, as well as override-able instance methods with a default implementation ( explained in interview questions)

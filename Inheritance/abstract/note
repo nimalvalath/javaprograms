@@ -1,0 +1,13 @@
+Abstract class
+An abstract class is a class that is declared abstract—it may or may not include abstract methods. Abstract classes cannot be instantiated, but they can be subclassed.
+
+We create abstract class only to inherit in one or other class.+
+We can not instantiate an abstract class just like we can not instantiate an interface. If you are not inheriting the abstract class then there is no point in having it.+
+Below is the example of inheriting the abstract class and calling the concrete method through an instance of child class where concrete method is defined in parent.
+
+More important points about abstract class :+
+If any one method is abstract in a class then class must be declared abstract.
+An abstract class can have data members just like concrete class.
+An abstract class do contains a constructor but it can not be instantiated, it can only be inherited.
+A class which inherits the abstract class should provide implementations to all the abstract methods unless it is also abstract.
+A class which inherits the abstract class can override the concrete methods as well.
